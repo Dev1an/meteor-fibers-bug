@@ -6,9 +6,10 @@ Package.describe({
   documentation: 'README.md'
 });
 
+Npm.depends({'control-flow': '0.2.0'});
+
 Package.onUse(function(api) {
   api.versionsFrom('1.0.3.2');
-  Npm.depends({'control-flow': '0.2.0'});
   
   api.addFiles('myfibers.js');
 });
